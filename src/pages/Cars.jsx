@@ -1,9 +1,13 @@
-import React from 'react'
+import Layout from "../components/Layout"
 
 const Cars = () => {
-  return (
-    <div>Cars</div>
-  )
+    return (
+        <Layout>
+          <div>      
+            This is the Cars page
+          </div>
+        </Layout>
+      )
 }
 
 export default Cars

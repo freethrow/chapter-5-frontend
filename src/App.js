@@ -1,11 +1,11 @@
+import Layout from "./components/Layout";
 function App() {
   return (
-    <div className="App">
-    
-      This is the App
-    
-    </div>
+    <Layout>
+      <div>      
+        This is the App
+      </div>
+    </Layout>
   );
 }
-
 export default App;

@@ -1,8 +1,10 @@
-import React from 'react'
+import Layout from "../components/Layout"
 
 const Car = () => {
   return (
-    <div>Car</div>
+    <Layout>
+        <div>Car Page</div>
+    </Layout>
   )
 }
 
