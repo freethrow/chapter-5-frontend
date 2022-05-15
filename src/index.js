@@ -12,8 +12,7 @@ import {
 import Car from './pages/Car'
 import Cars from './pages/Cars'
 import NewCar from './pages/NewCar'
-import EditCar from './pages/EditCar'
-import About from './pages/About'
+
 
 
 import './index.css';
@@ -29,10 +28,14 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="cars" element={<Cars />} />
-        <Route path="cars/new" element={<NewCar />} />
-        <Route path="cars/edit/:id" element={<EditCar />} />
+        <Route path="new" element={<NewCar />} />
         <Route path="cars/:id" element={<Car />} />
-        <Route path="about" element={<About />} />
+        <Route path="*" element={
+        <main style={{ padding: "1rem" }}>
+          <p>There's nothing here!</p>
+        </main>
+      }
+    />
       </Routes>
     </BrowserRouter>
     </React.StrictMode>
