@@ -20,7 +20,7 @@ const Car = () => {
         setPrice(event.target.value)
     }
 
-    const getCar =  async(id) => {        
+    const getCar =  async() => {        
         const res = await fetch(`${BASE_URL}${id}`)
         if (!res.ok){
             setError("Error fetching car")
