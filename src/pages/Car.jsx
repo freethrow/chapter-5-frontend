@@ -21,7 +21,7 @@ const Car = () => {
     }
 
     const getCar =  async(id) => {        
-        const res = await fetch(BASE_URL+id )
+        const res = await fetch(`${BASE_URL}${id}`)
         if (!res.ok){
             setError("Error fetching car")
             
